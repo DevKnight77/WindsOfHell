@@ -1,0 +1,245 @@
+{
+  "code": "knightsdragon-female",
+  "class": "EntityAgent",
+  "hitboxSize": {
+    "x": 1,
+    "y": 1
+  },
+  "deadHitboxSize": {
+    "x": 1,
+    "y": 1
+  },
+  "eyeHeight": 3.0,
+  "drops": [],
+  "client": {
+    "renderer": "Shape",
+    "shape": { "base": "windsofhell:entity/land/knightsdragon-female" },
+    "texture": { "base": "windsofhell:entity/land/knightsdragon/female1" },
+    "behaviors": [
+      { "code": "repulseagents" },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 1.1251
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      { "code": "interpolateposition" },
+      { "code": "harvestable" }
+    ],
+    "animations": [
+      {
+        "code": "die",
+        "animation": "landdie",
+        "animationSpeed": 1.4,
+        "weight": 10,
+        "blendMode": "Average",
+        "triggeredBy": { "onControls": [ "dead" ] }
+      },
+      {
+        "code": "idle",
+        "animation": "landidle",
+        "animationSpeed": 1,
+        "blendMode": "Average",
+        "triggeredBy": { "defaultAnim": true }
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      { "code": "repulseagents" },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 1.1251
+      },
+      {
+        "code": "health",
+        "currenthealth": 40,
+        "maxhealth": 40
+      },
+      {
+        "code": "deaddecay",
+        "hoursToDecay": 96,
+        "decayedBlock": "carcass-large"
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      {
+        "code": "harvestable",
+        "drops": [
+          {
+            "type": "item",
+            "code": "redmeat-raw",
+            "quantity": {
+              "avg": 82,
+              "var": 62
+            }
+          },
+          {
+            "type": "item",
+            "code": "fat",
+            "quantity": {
+              "avg": 36,
+              "var": 22
+            }
+          },
+          {
+            "type": "item",
+            "code": "bone",
+            "quantity": {
+              "avg": 30,
+              "var": 14
+            }
+          }
+        ]
+      },
+      { "code": "breathe" },
+      {
+        "code": "emotionstates",
+        "states": [
+          {
+            "code": "fleeondamage",
+            "duration": 60,
+            "chance": 0.75,
+            "slot": 2,
+            "priority": 5,
+            "accumType": "sum",
+            "belowTempDuration": 600,
+            "belowTempThreshold": -5
+          },
+          {
+            "code": "saturated",
+            "duration": 2400,
+            "chance": 1,
+            "slot": 0,
+            "priority": 1,
+            "accumType": "sum",
+            "belowTempDuration": 600,
+            "belowTempThreshold": -5
+          },
+          {
+            "code": "aggressiveondamage",
+            "duration": 30,
+            "chance": 1,
+            "slot": 2,
+            "priority": 2,
+            "accumType": "noaccum"
+          }
+        ]
+      },
+      {
+        "code": "taskai",
+        "aitasks": [
+          {
+            "code": "meleeattack",
+            "entityCodes": [ "pig-wild-male", "pig-wild-female", "sheep-bighorn-male", "sheep-bighorn-female" ],
+            "priority": 2,
+            "damage": 22,
+            "damageType": "SlashingAttack",
+            "slot": 1,
+            "mincooldown": 1500,
+            "maxcooldown": 1500,
+            "attackDurationMs": 800,
+            "damagePlayerAtMs": 500,
+            "animation": "Attack",
+            "animationSpeed": 2.5,
+            "sound": "entity/knightsdragon/bite_attack1"
+          },
+          {
+            "code": "seekentity",
+            "entityCodes": [ "pig-wild-male", "pig-wild-female", "sheep-bighorn-male", "sheep-bighorn-female" ],
+            "priority": 1.5,
+            "moveSpeed": 1,
+            "damageType": "SlashingAttack",
+            "slot": 1,
+            "mincooldown": 1500,
+            "maxcooldown": 1500,
+            "attackDurationMs": 800,
+            "damagePlayerAtMs": 500,
+            "animation": "biteattack",
+            "animationSpeed": 2.5,
+            "sound": "entity/knightsdragon/bite_attack1",
+            "whenNotInEmotionState": "saturated"
+          },
+          {
+            "code": "seekentity",
+            "entityCodes": [ "pig-wild-male", "pig-wild-female", "sheep-bighorn-male", "sheep-bighorn-female" ],
+            "priority": 1.49,
+            "moveSpeed": 0.045,
+            "seekingRange": 15,
+            "animation": "landwalk",
+            "leapAtTarget": true,
+            "leapAnimation": null,
+            "animationSpeed": 2.5,
+            "leapChance": 0.01,
+            "sound": "entity/knightsdragon/bite_attack1",
+            "whenInEmotionState": "aggressiveondamage"
+          },
+          {
+            "code": "idle",
+            "priority": 1.45,
+            "priorityForCancel": 1.55,
+            "minduration": 2000000,
+            "maxduration": 8000000,
+            "mincooldown": 100000,
+            "maxcooldown": 300000,
+            "animation": "landsleep",
+            "whenNotInEmotionState": "aggressiveondamage",
+            "duringDayTimeFrames": [
+              {
+                "fromHour": 10,
+                "toHour": 18
+              },
+              {
+                "fromHour": 1,
+                "toHour": 3
+              }
+            ],
+            "stopOnNearbyEntityCodes": [ "player" ],
+            "stopRange": 10,
+            "stopOnHurt": true
+          },
+          {
+            "code": "getoutofwater",
+            "priority": 1.4,
+            "movespeed": 0.015,
+            "animation": "landwalk",
+            "animationSpeed": 2.2
+          },
+          {
+            "code": "wander",
+            "priority": 1.0,
+            "priorityForCancel": 1.35,
+            "movespeed": 0.006,
+            "animation": "landwalk",
+            "preferredLightLevel": 20
+          },
+          {
+            "code": "idle",
+            "priority": 0.9,
+            "minduration": 5000,
+            "maxduration": 30000,
+            "mincooldown": 2000,
+            "maxcooldown": 120000,
+            "priorityForCancel": 1.33,
+            "animation": "landsit",
+            "whenNotInEmotionState": "aggressiveondamage",
+            "stopOnNearbyEntityCodes": [ "player" ],
+            "stopRamge": 5
+          },
+          {
+            "code": "lookaround",
+            "priority": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  "sounds": {
+    "death": "entity/knightsdragon/death1"
+  },
+  "idleSoundChance": 0.1
+}
