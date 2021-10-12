@@ -1,6 +1,6 @@
 {
   "code": "wingedwolf-male",
-  "class": "EntityAgent",
+  "class": "TestEntity",
   "hitboxSize": {
     "x": 1.2,
     "y": 1

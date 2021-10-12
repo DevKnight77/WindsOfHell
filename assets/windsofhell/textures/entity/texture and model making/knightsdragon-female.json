@@ -9,7 +9,7 @@
 		"dragon": [1024,512]
 	},
 	"textures": {
-		"dragon": "C:/Users/Jexel/Desktop/dragon"
+		"dragon": "C:/Users/Jexel/Desktop/vsmodtemplate-1.5.5/mods/windsofhell/assets/windsofhell/textures/entity/texture and model making/dragon"
 	},
 	"elements": [
 		{
@@ -226,15 +226,15 @@
 																															"name": "SpearBase",
 																															"from": [ 15.6, -0.6, -1.2 ], 
 																															"to": [ 24.0, 3.0, 6.0 ], 
-																															"uv": [ 228.5, 72.0 ],
+																															"uv": [ 937.5, 35.0 ],
 																															"rotationOrigin": [ 24.0, 1.2, 2.4 ],
 																															"faces": {
-																																"north": { "texture": "#dragon", "uv": [ 228.5, 79.0, 236.5, 82.5 ] },
-																																"east": { "texture": "#dragon", "uv": [ 236.5, 79.0, 243.5, 82.5 ] },
-																																"south": { "texture": "#dragon", "uv": [ 243.5, 79.0, 251.5, 82.5 ] },
-																																"west": { "texture": "#dragon", "uv": [ 251.5, 79.0, 258.5, 82.5 ] },
-																																"up": { "texture": "#dragon", "uv": [ 228.5, 72.0, 236.5, 79.0 ] },
-																																"down": { "texture": "#dragon", "uv": [ 236.5, 72.0, 244.5, 79.0 ] }
+																																"north": { "texture": "#dragon", "uv": [ 937.5, 42.0, 945.5, 45.5 ] },
+																																"east": { "texture": "#dragon", "uv": [ 945.5, 42.0, 952.5, 45.5 ] },
+																																"south": { "texture": "#dragon", "uv": [ 952.5, 42.0, 960.5, 45.5 ] },
+																																"west": { "texture": "#dragon", "uv": [ 960.5, 42.0, 967.5, 45.5 ] },
+																																"up": { "texture": "#dragon", "uv": [ 937.5, 35.0, 945.5, 42.0 ] },
+																																"down": { "texture": "#dragon", "uv": [ 945.5, 35.0, 953.5, 42.0 ] }
 																															},
 																															"children": [
 																																{
@@ -6465,7 +6465,7 @@
 						"ForeArmL": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
 						"ArmR": { "offsetX": 0.0, "offsetY": 3.5999999999999996, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 60.0 },
 						"ForeArmR": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
-						"NeckBase": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 46.0 },
+						"NeckBase": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 50.0 },
 						"Neck2": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -2.0 },
 						"Neck3": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -3.0 },
 						"Neck4": {  },
@@ -6494,8 +6494,9 @@
 						"ForeArmR": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
 						"WingArmL": { "offsetX": -1.32, "offsetY": -0.36, "offsetZ": 0.0, "rotationX": 4.89, "rotationY": 0.0, "rotationZ": -5.0 },
 						"WingForeArmL": { "rotationX": 4.6944444444444455, "rotationY": 0.0, "rotationZ": 0.0 },
-						"WingLimb1AL": { "rotationX": 3.2500000000000004, "rotationY": 0.0, "rotationZ": 0.0 },
-						"WingLimb2AL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.7222222222222223, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLimb1AL": { "rotationX": 3.25, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLimb2AL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.72, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLeather2AL": { "offsetX": -0.5, "offsetY": -0.0, "offsetZ": 0.0 },
 						"WingLimb1BL": { "rotationX": 3.2500000000000004, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1CL": { "rotationX": 1.4444444444444446, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1DL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
@@ -6503,6 +6504,8 @@
 						"WingArmR": { "offsetX": -1.32, "offsetY": 0.36, "offsetZ": 0.0, "rotationX": -4.89, "rotationY": 0.0, "rotationZ": 5.0 },
 						"WingForeArmR": { "rotationX": -4.6944444444444455, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1A": { "rotationX": -3.2500000000000004, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLimbR2A": {  },
+						"WingLeatherR2A": { "offsetX": -0.5, "offsetY": 0.0, "offsetZ": 0.0 },
 						"WingLimbR1B": { "rotationX": -3.2500000000000004, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1C": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1D": { "rotationX": -0.36111111111111116, "rotationY": 0.0, "rotationZ": 0.0 }
@@ -6530,7 +6533,7 @@
 						"ForeArmR": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
 						"WingArmL": { "offsetX": -2.4000000000000004, "offsetY": -1.7999999999999998, "offsetZ": 0.0, "rotationX": 25.0, "rotationY": -20.0, "rotationZ": -10.0 },
 						"WingForeArmL": { "rotationX": 20.0, "rotationY": 0.0, "rotationZ": 0.0 },
-						"WingLimb1AL": { "rotationX": 5.8500000000000005, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLimb1AL": { "rotationX": 5.85, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb2AL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 1.3, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1BL": { "rotationX": 5.8500000000000005, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1CL": { "rotationX": 2.6, "rotationY": 0.0, "rotationZ": 0.0 },
@@ -6564,8 +6567,8 @@
 						"ForeArmL": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
 						"ArmR": { "offsetX": 0.0, "offsetY": 3.5999999999999996, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 60.0 },
 						"ForeArmR": { "offsetX": 1.2000000000000002, "offsetY": -1.2000000000000002, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 55.0 },
-						"WingArmL": { "offsetX": -4.800000000000001, "offsetY": -3.0, "offsetZ": 0.0, "rotationX": 44.0, "rotationY": -24.0, "rotationZ": -10.0 },
-						"WingForeArmL": { "rotationX": 32.0, "rotationY": 7.0, "rotationZ": 0.0 },
+						"WingArmL": { "offsetX": -4.800000000000001, "offsetY": -3.0, "offsetZ": 0.0, "rotationX": 36.0, "rotationY": -24.0, "rotationZ": -10.0 },
+						"WingForeArmL": { "rotationX": 38.0, "rotationY": 7.0, "rotationZ": 0.0 },
 						"WingLimb1AL": { "rotationX": 9.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb2AL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 2.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1BL": { "rotationX": 9.0, "rotationY": 0.0, "rotationZ": 0.0 },
@@ -6573,9 +6576,10 @@
 						"WingLimb1DL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimb1EL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLeatherB2EL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0 },
-						"WingArmR": { "offsetX": -4.800000000000001, "offsetY": 3.0, "offsetZ": 0.0, "rotationX": -44.0, "rotationY": -24.0, "rotationZ": 10.0 },
-						"WingForeArmR": { "rotationX": -32.0, "rotationY": 7.0, "rotationZ": 0.0 },
+						"WingArmR": { "offsetX": -4.800000000000001, "offsetY": 3.0, "offsetZ": 0.0, "rotationX": -36.0, "rotationY": -24.0, "rotationZ": 10.0 },
+						"WingForeArmR": { "rotationX": -38.0, "rotationY": 7.0, "rotationZ": 0.0 },
 						"WingLimbR1A": { "rotationX": -9.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"WingLimbR2A": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1B": { "rotationX": -9.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1C": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingLimbR1D": { "rotationX": -1.0, "rotationY": 0.0, "rotationZ": 0.0 },

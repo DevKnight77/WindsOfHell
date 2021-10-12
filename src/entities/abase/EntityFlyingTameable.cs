@@ -12,10 +12,10 @@ using windsofhell.src.entities.ai;
 
 namespace indsofhell.src.entities.abase
 {
-    class EntityFlyingTameable : EntityAgent, IMountable
+    public class EntityFlyingTameable : EntityAgent, IMountable
     {
         public static string NAME { get; } = "EntityFlyingTameable";
-        static EntityFlyingTameable() 
+        public EntityFlyingTameable() 
         {
             
         }
@@ -56,10 +56,10 @@ namespace indsofhell.src.entities.abase
 
         public bool isOnGround()
         {
-            BlockPos pos = new BlockPos((int)Pos.X, (int)Pos.Y - 1, (int)Pos.Z);
+            BlockPos blockOneBelow = new BlockPos((int)Pos.X, (int)Pos.Y - 1, (int)Pos.Z);
             Block loadedBlocks = (Block)World.Blocks;
             // SyncedEntityPos is double; BlockPos is int;
-            return loadedBlocks.GetBlockMaterial(World.GetBlockAccessor(true, false, true, true), pos, null) != EnumBlockMaterial.Air;
+            return loadedBlocks.GetBlockMaterial(World.GetBlockAccessor(true, false, true, true), blockOneBelow, null) != EnumBlockMaterial.Air;
         } 
 
         public override void OnGameTick(float dt)
@@ -75,7 +75,8 @@ namespace indsofhell.src.entities.abase
 
          public static IMountable GetMountable(IWorldAccessor world, TreeAttribute tree)
         {
-            EntityFlyingTameable flyingtameable = (EntityFlyingTameable)world.GetEntityById(tree.GetLong("EntityId")); 
+            EntityFlyingTameable flyingtameable = (EntityFlyingTameable)world.GetEntityById(tree.GetLong("EntityId"));
+            tree.SetString(EntityFlyingTameable.NAME, "EntityFlyingTameable");
 
             return flyingtameable;
         }

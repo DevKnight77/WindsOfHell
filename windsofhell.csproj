@@ -92,6 +92,7 @@
     <None Include="assets\windsofhell\shapes\entity\land\winged_wolf.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\entities\abase\TestEntity.cs" />
     <Compile Include="src\entities\ai\EntityAIFlyingRide.cs" />
     <Compile Include="src\entities\abase\EntityFlyingTameable.cs" />
     <Compile Include="src\WindsOfHell.cs" />
