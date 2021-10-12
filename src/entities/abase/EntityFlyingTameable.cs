@@ -15,7 +15,7 @@ namespace indsofhell.src.entities.abase
     public class EntityFlyingTameable : EntityAgent, IMountable
     {
         public static string NAME { get; } = "EntityFlyingTameable";
-        public EntityFlyingTameable() 
+        public EntityFlyingTameable() : base()
         {
             
         }

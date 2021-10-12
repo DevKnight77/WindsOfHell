@@ -1,6 +1,6 @@
 {
   "code": "wingedwolf-male",
-  "class": "TestEntity",
+  "class": "EntityFlyingTameable",
   "hitboxSize": {
     "x": 1.2,
     "y": 1
