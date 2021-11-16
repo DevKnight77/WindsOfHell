@@ -77,7 +77,15 @@
     <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar1.ogg" />
     <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar2.ogg" />
     <Content Include="assets\windsofhell\textures\entity\knightsdragon\female1.png" />
-    <Content Include="assets\windsofhell\textures\entity\winged_wolf\male1.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf1.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf2.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf3.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf4.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf5.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf6.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf7.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf8.png" />
+    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf9.png" />
     <Content Include="male1.png" />
     <Content Include="modinfo.json" />
   </ItemGroup>
@@ -86,10 +94,10 @@
     <None Include="assets\windsofhell\entities\land\wingedwolf_male.json" />
     <None Include="assets\windsofhell\entities\land\knightsdragon-female.json" />
     <None Include="assets\windsofhell\itemtypes\creature_knightsdragon_female.json" />
-    <None Include="assets\windsofhell\itemtypes\creature_wingedwolf_male.json" />
+    <None Include="assets\windsofhell\itemtypes\wingedwolf_male.json" />
     <None Include="assets\windsofhell\lang\en.json" />
     <None Include="assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
-    <None Include="assets\windsofhell\shapes\entity\land\winged_wolf.json" />
+    <None Include="assets\windsofhell\shapes\entity\land\wingedwolf.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\entities\abase\TestEntity.cs" />

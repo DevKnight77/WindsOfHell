@@ -2,7 +2,7 @@
   "type": "content",
   "modid": "windsofhell",
   "name": "Winds Of Hell",
-  "author": "DevKnight, BellCross",
+  "author": [ "DevKnight" ],
   "description": "Their winds can push you away, their fire will melt your armor and latch unto your skin, their flight will shake trees, their sound is gloriously eerie",
   "version": "1.0.0",
   "dependency": {

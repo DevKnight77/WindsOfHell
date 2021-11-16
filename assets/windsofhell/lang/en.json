@@ -1,5 +1,9 @@
 {
   "entity-knightsdragon-female": "Knights Dragon",
   "item-creature-dragon-knightsdragon-female": "Knights Dragon (Female)",
-  "item-dead-creature-knightsdragon-female": "Dead Female Knights Dragon"
+  "item-dead-creature-knightsdragon-female": "Dead Female Knights Dragon",
+    
+  "creature-wingedwolf-male": "Winged Wolf Male",
+  "item-creature-wingedwolf-male": "Winged Wolf (Male)",
+  "item-dead-creature-wingedwolf-male": "Dead Winged Wolf (Male)"
 }

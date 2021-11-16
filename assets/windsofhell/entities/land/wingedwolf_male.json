@@ -1,6 +1,6 @@
 {
   "code": "wingedwolf-male",
-  "class": "EntityFlyingTameable",
+  "class": "EntityAgent",
   "hitboxSize": {
     "x": 1.2,
     "y": 1
@@ -13,9 +13,19 @@
   "drops": [],
   "client": {
     "renderer": "Shape",
-    "shape": { "base": "windsofhell:entity/land/winged_wolf" },
+    "shape": { "base": "windsofhell:entity/land/wingedwolf" },
     "texture": {
-      "base": "windsofhell:entity/winged_wolf/male1"
+      "base": "windsofhell:entity/wingedwolf/wolf1",
+      "alternates": [
+        {"base": "windsofhell:entity/wingedwolf/wolf2"},
+        {"base": "windsofhell:entity/wingedwolf/wolf3"},
+        {"base": "windsofhell:entity/wingedwolf/wolf4"},
+        {"base": "windsofhell:entity/wingedwolf/wolf5"},
+        {"base": "windsofhell:entity/wingedwolf/wolf6"},
+        {"base": "windsofhell:entity/wingedwolf/wolf7"},
+        {"base": "windsofhell:entity/wingedwolf/wolf8"},
+        {"base": "windsofhell:entity/wingedwolf/wolf9"}
+      ]
     },
     "behaviors": [
       { "code": "repulseagents" },
