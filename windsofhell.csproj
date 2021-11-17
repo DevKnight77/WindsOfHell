@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,12 @@
     <Reference Include="VintagestoryAPI">
       <HintPath>D:\Vintagestory\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>D:\Vintagestory\VintagestoryLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VSBuildLib">
+      <HintPath>D:\Vintagestory\VSBuildLib.dll</HintPath>
     </Reference>
     <Reference Include="VSSurvivalMod">
       <HintPath>D:\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
@@ -86,10 +92,11 @@
     <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf7.png" />
     <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf8.png" />
     <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf9.png" />
-    <Content Include="male1.png" />
     <Content Include="modinfo.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="assets\windsofhell\entities\land\wingedwolf_male.json" />
     <None Include="assets\windsofhell\entities\land\knightsdragon-female.json" />
@@ -98,11 +105,21 @@
     <None Include="assets\windsofhell\lang\en.json" />
     <None Include="assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
     <None Include="assets\windsofhell\shapes\entity\land\wingedwolf.json" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\entities\abase\TestEntity.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="src\entities\ai\EntityAIFlyingRide.cs" />
     <Compile Include="src\entities\abase\EntityFlyingTameable.cs" />
+    <Compile Include="src\entities\abase\MathX.cs" />
+    <Compile Include="src\entities\abase\RedirectLogs.cs" />
     <Compile Include="src\WindsOfHell.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

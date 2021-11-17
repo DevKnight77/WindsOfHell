@@ -12,7 +12,7 @@
     "base": "windsofhell:entity/land/wingedwolf"
   },
   "texture": {     
-    "base": "windsofhell:entity/land/wingedwolf/wolf9"
+    "base": "windsofhell:entity/wingedwolf/wolf9"
   },
   "creativeinventory": {
     "general": [ "*" ],
@@ -52,14 +52,15 @@
   },
   "tpHandTransform": {
     "translation": {
-      "x": -0.5,
-      "y": -1.6,
-      "z": -1.1
+      "x": -1,
+      "y": -0.6,
+      "z": -0.7
     },
     "rotation": {
-      "x": 0,
-      "y": -10,
-      "z": -78
-    }
+      "x": -180,
+      "y": 0,
+      "z": -156
+    },
+    "scale":  0.5
   }
 }

@@ -9,7 +9,7 @@
 		"dragon": [1024,512]
 	},
 	"textures": {
-		"female3": "C:/Users/Jexel/Desktop/vsmodtemplate-1.5.5/mods/windsofhell/assets/windsofhell/textures/entity/texture and model making/female3"
+		"female3": "windsofhell:entity/knightsdragon/female1"
 	},
 	"elements": [
 		{
@@ -5641,7 +5641,7 @@
 						"PinkyFingerTR": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"MidFingerBR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"MidFingerTR": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
-						"PointFingerBR	": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"PointFingerBR": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"PointFingerTR": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
 						"WingArmL": { "rotationX": 18.002559, "rotationY": 0.951052, "rotationZ": 0.309044 },
 						"WingForeArmL": { "rotationX": 0.0, "rotationY": 40.0, "rotationZ": 0.0 },

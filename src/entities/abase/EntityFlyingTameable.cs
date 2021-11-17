@@ -10,7 +10,7 @@ using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
 using windsofhell.src.entities.ai;
 
-namespace indsofhell.src.entities.abase
+namespace windsofhell.src.entities.abase
 {
     public class EntityFlyingTameable : EntityAgent, IMountable
     {
