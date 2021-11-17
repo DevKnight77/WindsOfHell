@@ -14,7 +14,13 @@
   "client": {
     "renderer": "Shape",
     "shape": { "base": "windsofhell:entity/land/knightsdragon-female" },
-    "texture": { "base": "windsofhell:entity/knightsdragon/female1" },
+    "texture": {
+      "base": "windsofhell:entity/knightsdragon/female1",
+      "alternates": [
+        {"base": "windsofhell:entity/knightsdragon/female2"},
+        {"base": "windsofhell:entity/knightsdragon/female3"}
+      ]
+    },
     "behaviors": [
       { "code": "repulseagents" },
       {
