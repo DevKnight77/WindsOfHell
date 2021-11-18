@@ -96,6 +96,13 @@
     <None Include="assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
     <None Include="assets\windsofhell\shapes\entity\land\wingedwolf.json" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\entities\abase\EntityFlyingTameable.cs" />
+    <Compile Include="src\entities\abase\MathX.cs" />
+    <Compile Include="src\entities\abase\RedirectLogs.cs" />
+    <Compile Include="src\entities\ai\EntityAIFlyingRide.cs" />
+    <Compile Include="src\WindsOfHell.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
