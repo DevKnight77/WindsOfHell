@@ -63,38 +63,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\bite_attack1.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\bite_attack2.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\death1.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\death2.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\flap1.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\flap2.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\flap3.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\flap4.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar1.ogg" />
-    <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar2.ogg" />
-    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female1.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female2.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female3.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf1.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf2.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf3.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf4.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf5.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf6.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf7.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf8.png" />
-    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf9.png" />
-    <Content Include="modinfo.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\windsofhell\entities\land\knightsdragon-female.json" />
-    <None Include="assets\windsofhell\entities\land\wingedwolf_male.json" />
-    <None Include="assets\windsofhell\itemtypes\creature_knightsdragon_female.json" />
-    <None Include="assets\windsofhell\itemtypes\wingedwolf_male.json" />
-    <None Include="assets\windsofhell\lang\en.json" />
-    <None Include="assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
-    <None Include="assets\windsofhell\shapes\entity\land\wingedwolf.json" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\bite_attack1.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\bite_attack2.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\death1.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\death2.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\flap1.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\flap2.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\flap3.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\flap4.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\roar1.ogg" />
+    <Content Include="resources\assets\windsofhell\sounds\entity\knightsdragon\roar2.ogg" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\knightsdragon\female1.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\knightsdragon\female2.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\knightsdragon\female3.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf1.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf2.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf3.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf4.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf5.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf6.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf7.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf8.png" />
+    <Content Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf9.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\entities\abase\EntityFlyingTameable.cs" />
@@ -102,6 +92,19 @@
     <Compile Include="src\entities\abase\RedirectLogs.cs" />
     <Compile Include="src\entities\ai\EntityAIFlyingRide.cs" />
     <Compile Include="src\WindsOfHell.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\assets\windsofhell\entities\land\knightsdragon-female.json" />
+    <None Include="resources\assets\windsofhell\entities\land\wingedwolf_male.json" />
+    <None Include="resources\assets\windsofhell\itemtypes\creature_knightsdragon_female.json" />
+    <None Include="resources\assets\windsofhell\itemtypes\wingedwolf_male.json" />
+    <None Include="resources\assets\windsofhell\lang\en.json" />
+    <None Include="resources\assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
+    <None Include="resources\assets\windsofhell\shapes\entity\land\wingedwolf.json" />
+    <None Include="resources\assets\windsofhell\textures\entity\land\knightsdragon\female1.png.kra" />
+    <None Include="resources\assets\windsofhell\textures\entity\land\knightsdragon\female1.png~" />
+    <None Include="resources\assets\windsofhell\textures\entity\land\wingedwolf\wolf9.png.kra" />
+    <None Include="resources\modinfo.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
