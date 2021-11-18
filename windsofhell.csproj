@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F7BCCE6D-6A15-4EC0-A87E-80BD5DDFCDA2}</ProjectGuid>
+    <ProjectGuid>{D49D001F-6650-4BE1-A540-51A439EF4526}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>windsofhell</RootNamespace>
     <AssemblyName>windsofhell</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,12 +44,6 @@
     <Reference Include="VintagestoryAPI">
       <HintPath>D:\Vintagestory\VintagestoryAPI.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="VintagestoryLib">
-      <HintPath>D:\Vintagestory\VintagestoryLib.dll</HintPath>
-    </Reference>
-    <Reference Include="VSBuildLib">
-      <HintPath>D:\Vintagestory\VSBuildLib.dll</HintPath>
     </Reference>
     <Reference Include="VSSurvivalMod">
       <HintPath>D:\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
@@ -82,45 +73,28 @@
     <Content Include="assets\windsofhell\sounds\entity\knightsdragon\flap4.ogg" />
     <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar1.ogg" />
     <Content Include="assets\windsofhell\sounds\entity\knightsdragon\roar2.ogg" />
-    <Content Include="assets\windsofhell\textures\entity\knightsdragon\female1.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf1.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf2.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf3.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf4.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf5.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf6.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf7.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf8.png" />
-    <Content Include="assets\windsofhell\textures\entity\wingedwolf\wolf9.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female1.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female2.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\knightsdragon\female3.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf1.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf2.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf3.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf4.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf5.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf6.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf7.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf8.png" />
+    <Content Include="assets\windsofhell\textures\entity\land\wingedwolf\wolf9.png" />
     <Content Include="modinfo.json" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\windsofhell\entities\land\wingedwolf_male.json" />
     <None Include="assets\windsofhell\entities\land\knightsdragon-female.json" />
+    <None Include="assets\windsofhell\entities\land\wingedwolf_male.json" />
     <None Include="assets\windsofhell\itemtypes\creature_knightsdragon_female.json" />
     <None Include="assets\windsofhell\itemtypes\wingedwolf_male.json" />
     <None Include="assets\windsofhell\lang\en.json" />
     <None Include="assets\windsofhell\shapes\entity\land\knightsdragon-female.json" />
     <None Include="assets\windsofhell\shapes\entity\land\wingedwolf.json" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="src\entities\ai\EntityAIFlyingRide.cs" />
-    <Compile Include="src\entities\abase\EntityFlyingTameable.cs" />
-    <Compile Include="src\entities\abase\MathX.cs" />
-    <Compile Include="src\entities\abase\RedirectLogs.cs" />
-    <Compile Include="src\WindsOfHell.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

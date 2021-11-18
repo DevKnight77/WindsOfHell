@@ -12,7 +12,7 @@
     "base": "windsofhell:entity/land/knightsdragon-female"
   },
   "texture": {
-    "base": "windsofhell:entity/knightsdragon/female1"
+    "base": "windsofhell:entity/land/knightsdragon/female1"
   },
   "creativeinventory": {
     "general": [ "*" ],

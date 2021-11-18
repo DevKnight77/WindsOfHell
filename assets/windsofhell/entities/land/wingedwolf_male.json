@@ -15,16 +15,16 @@
     "renderer": "Shape",
     "shape": { "base": "windsofhell:entity/land/wingedwolf" },
     "texture": {
-      "base": "windsofhell:entity/wingedwolf/wolf1",
+      "base": "windsofhell:entity/land/wingedwolf/wolf1",
       "alternates": [
-        {"base": "windsofhell:entity/wingedwolf/wolf2"},
-        {"base": "windsofhell:entity/wingedwolf/wolf3"},
-        {"base": "windsofhell:entity/wingedwolf/wolf4"},
-        {"base": "windsofhell:entity/wingedwolf/wolf5"},
-        {"base": "windsofhell:entity/wingedwolf/wolf6"},
-        {"base": "windsofhell:entity/wingedwolf/wolf7"},
-        {"base": "windsofhell:entity/wingedwolf/wolf8"},
-        {"base": "windsofhell:entity/wingedwolf/wolf9"}
+        { "base": "windsofhell:entity/land/wingedwolf/wolf2" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf3" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf4" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf5" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf6" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf7" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf8" },
+        { "base": "windsofhell:entity/land/wingedwolf/wolf9" }
       ]
     },
     "behaviors": [

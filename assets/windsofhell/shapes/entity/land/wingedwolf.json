@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"wolf9": "windsofhell:entity/wingedwolf/wolf9"
+		"wolf9": "windsofhell:entity/land/wingedwolf/wolf9"
 	},
 	"elements": [
 		{
@@ -343,15 +343,15 @@
 							"name": "WingRightBack",
 							"from": [ 0.0, 0.5, -7.0 ], 
 							"to": [ 7.0, 0.5, 0.0 ], 
-							"uv": [ 32.0, 70.0 ],
+							"uv": [ 32.5, 70.0 ],
 							"rotationOrigin": [ 0.0, 0.5, 0.0 ],
 							"faces": {
-								"north": { "texture": "#wolf9", "uv": [ 32.0, 77.0, 39.0, 77.5 ] },
-								"east": { "texture": "#wolf9", "uv": [ 39.0, 77.0, 46.0, 77.5 ] },
-								"south": { "texture": "#wolf9", "uv": [ 46.0, 77.0, 53.0, 77.5 ] },
-								"west": { "texture": "#wolf9", "uv": [ 53.0, 77.0, 60.0, 77.5 ] },
-								"up": { "texture": "#wolf9", "uv": [ 32.0, 70.0, 39.0, 77.0 ] },
-								"down": { "texture": "#wolf9", "uv": [ 39.0, 70.0, 46.0, 77.0 ] }
+								"north": { "texture": "#wolf9", "uv": [ 32.5, 77.0, 39.5, 77.5 ] },
+								"east": { "texture": "#wolf9", "uv": [ 39.5, 77.0, 46.5, 77.5 ] },
+								"south": { "texture": "#wolf9", "uv": [ 46.5, 77.0, 53.5, 77.5 ] },
+								"west": { "texture": "#wolf9", "uv": [ 53.5, 77.0, 60.5, 77.5 ] },
+								"up": { "texture": "#wolf9", "uv": [ 32.5, 70.0, 39.5, 77.0 ] },
+								"down": { "texture": "#wolf9", "uv": [ 39.5, 70.0, 46.5, 77.0 ] }
 							},
 							"children": [
 								{

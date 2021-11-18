@@ -11,8 +11,8 @@
   "shape": {
     "base": "windsofhell:entity/land/wingedwolf"
   },
-  "texture": {     
-    "base": "windsofhell:entity/wingedwolf/wolf9"
+  "texture": {
+    "base": "windsofhell:entity/land/wingedwolf/wolf9"
   },
   "creativeinventory": {
     "general": [ "*" ],

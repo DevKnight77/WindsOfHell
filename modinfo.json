@@ -1,9 +1,9 @@
 {
   "type": "content",
   "modid": "windsofhell",
-  "name": "Winds Of Hell",
-  "author": [ "DevKnight" ],
-  "description": "Their winds can push you away, their fire will melt your armor and latch unto your skin, their flight will shake trees, their sound is gloriously eerie",
+  "name": "windsofhell",
+  "author": "Unknown",
+  "description": "To be added",
   "version": "1.0.0",
   "dependency": {
     "game": "1.15.5"

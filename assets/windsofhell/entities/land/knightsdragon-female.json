@@ -17,8 +17,8 @@
     "texture": {
       "base": "windsofhell:entity/knightsdragon/female1",
       "alternates": [
-        {"base": "windsofhell:entity/knightsdragon/female2"},
-        {"base": "windsofhell:entity/knightsdragon/female3"}
+        { "base": "windsofhell:entity/knightsdragon/female2" },
+        { "base": "windsofhell:entity/knightsdragon/female3" }
       ]
     },
     "behaviors": [
