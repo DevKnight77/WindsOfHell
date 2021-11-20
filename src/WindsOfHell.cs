@@ -8,6 +8,9 @@ using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using windsofhell.src.entities.ai;
 
+[assembly: ModInfo( "WindsOfHell",
+	Description = "Ace of Dragons",
+	Authors     = new []{ "DevKnight" } )]
 namespace WindsOfHell
 {
     class WindsOfHell : ModSystem
@@ -18,7 +21,6 @@ namespace WindsOfHell
 
             api.RegisterMountable(EntityFlyingTameable.NAME, EntityFlyingTameable.GetMountable);
             api.RegisterEntity(EntityFlyingTameable.NAME, typeof(EntityFlyingTameable));
-            api.RegisterEntityClass(EntityFlyingTameable.NAME, new EntityProperties()); 
 
             AiTaskRegistry.Register<EntityAIFlyingRide>("fly");
         }

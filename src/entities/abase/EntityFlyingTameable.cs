@@ -8,11 +8,12 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
-using windsofhell.src.entities.ai;
+// using windsofhell.src.entities.ai;
 
 namespace windsofhell.src.entities.abase
 {
     public class EntityFlyingTameable : EntityAgent, IMountable
+    
     {
         public static string NAME { get; } = "EntityFlyingTameable";
         public EntityFlyingTameable() : base()
@@ -56,10 +57,10 @@ namespace windsofhell.src.entities.abase
 
         public bool isOnGround()
         {
-            BlockPos blockOneBelow = new BlockPos((int)Pos.X, (int)Pos.Y - 1, (int)Pos.Z);
-            Block loadedBlocks = (Block)World.Blocks;
-            // SyncedEntityPos is double; BlockPos is int;
-            return loadedBlocks.GetBlockMaterial(World.GetBlockAccessor(true, false, true, true), blockOneBelow, null) != EnumBlockMaterial.Air;
+            EntityPos blockOneBelow = new EntityPos(Pos.X, Pos.Y - 1, Pos.Z);
+            BlockPos blockpos = blockOneBelow.AsBlockPos;
+            Block loadedBlocks = World.GetBlockAccessor(true, false, true , true).GetBlock(blockpos.X, blockpos.Y, blockpos.Z);
+            return loadedBlocks.GetBlockMaterial(World.GetBlockAccessor(true, false, true, true), blockpos, null) != EnumBlockMaterial.Air;
         } 
 
         public override void OnGameTick(float dt)
