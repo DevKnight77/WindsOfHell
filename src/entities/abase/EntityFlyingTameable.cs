@@ -8,7 +8,7 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
-// using windsofhell.src.entities.ai;
+using windsofhell.src.entities.ai;
 
 namespace windsofhell.src.entities.abase
 {
@@ -70,8 +70,9 @@ namespace windsofhell.src.entities.abase
                 this.isFlying = true;
                 //cancel controlledphysics gravity
                 this.isFlying = controls.IsFlying; 
-            }
-            
+            } 
+
+            base.OnGameTick(dt);
         }
 
          public static IMountable GetMountable(IWorldAccessor world, TreeAttribute tree)
