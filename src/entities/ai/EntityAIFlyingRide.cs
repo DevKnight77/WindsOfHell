@@ -14,7 +14,7 @@ namespace windsofhell.src.entities.ai
     class EntityAIFlyingRide : AiTaskBase
     {
         // true flyflap; flase flyglide
-        public  bool isFlapping { get; set; }
+        public bool isFlapping { get; set; }
         public EntityFlyingTameable flyingentity { get; set; }
 
         EntityAIFlyingRide(EntityFlyingTameable flyingentity) : base(flyingentity)

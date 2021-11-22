@@ -16,43 +16,60 @@ namespace windsofhell.src.entities.abase
     
     {
         public static string NAME { get; } = "EntityFlyingTameable";
+        public EntityAgent pilot;
+        public byte passengerIndex { get; set; }
+        public bool isFlying { get; set; }
         public EntityFlyingTameable() : base()
         {
             
         }
-        public EntityAgent pilot { get; set; }
-        public byte passengerIndex { get; set; }
-        public bool isFlying { get; set; }
-
+        
         public override bool IsInteractable => true;
-        public Vec3d MountPosition => new Vec3d(0,0,0);
+        public Vec3d MountPosition { 
+            get{
+                // edit position and animation
+               return Pos.AsBlockPos.ToVec3d().Add(0,0,0);
+            }
+        }
 
-        public float? MountYaw => pilot.HeadYaw;
+        public float? MountYaw => HeadYaw;
 
         public string SuggestedAnimation => "flyflap";
 
+        // called when mounted
         public void DidMount(EntityAgent entityAgent)
         {
-            entityAgent = this.pilot;
+            if(pilot!=null) return;
+            pilot=entityAgent;
         }
-
+        
+        // called when an entity dismounts
         public void DidUnmount(EntityAgent entityAgent)
         {
-            entityAgent = this.pilot;
+            pilot=null;
+            Vec3d entityPos = Pos.AsBlockPos.ToVec3d().Add(0,0,0);
+            if(!Api.World.CollisionTester.IsColliding(Api.World.BlockAccessor, entityAgent.CollisionBox, entityPos, false))
+            {
+                entityAgent.TeleportTo(entityPos);
+            }
         }
 
         public void MountableToTreeAttributes(TreeAttribute tree)
         {
-            throw new NotImplementedException();
+            tree.SetString("entityname", "flyingtameable");
+            tree.SetDouble("posx", Pos.X);
+            tree.SetDouble("posy", Pos.Y);
+            tree.SetDouble("posz", Pos.Z);
         }
 
         public override void OnInteract(EntityAgent byEntity, ItemSlot slot, Vec3d hitPosition, EnumInteractMode mode)
         {
             if (mode == EnumInteractMode.Interact)
             {
-                byEntity = this.pilot;
+                if(pilot!=null) return;
+                byEntity.TryMount(this);
             }
-
+            base.OnInteract(byEntity, slot, hitPosition, mode);
         }
 
         public bool isOnGround()
@@ -65,22 +82,28 @@ namespace windsofhell.src.entities.abase
 
         public override void OnGameTick(float dt)
         {
+            base.OnGameTick(dt);
+
             if (!isOnGround())
             {
                 this.isFlying = true;
                 //cancel controlledphysics gravity
                 this.isFlying = controls.IsFlying; 
             } 
-
-            base.OnGameTick(dt);
         }
 
+        public override void Die(EnumDespawnReason reason = EnumDespawnReason.Death, DamageSource damageSourceForDeath = null)
+        {
+            base.Die(reason, damageSourceForDeath);
+            pilot?.TryUnmount();
+            
+        }
          public static IMountable GetMountable(IWorldAccessor world, TreeAttribute tree)
         {
-            EntityFlyingTameable flyingtameable = (EntityFlyingTameable)world.GetEntityById(tree.GetLong("EntityId"));
-            tree.SetString(EntityFlyingTameable.NAME, "EntityFlyingTameable");
-
-            return flyingtameable;
+            Entity entity = world.GetEntityById(tree.GetLong("EntityId"));
+            EntityFlyingTameable flyingTameable = (entity as EntityFlyingTameable);
+           
+            return flyingTameable;
         }
 
     }
