@@ -33,13 +33,13 @@ namespace windsofhell.src.entities.ai
         {
             if(!flyingentity.isFlying)
             {
-                if(flyingentity.pilot.Controls.Jump)
-                {
-                    flyingentity.Pos.Y += 2;
-                } else if(flyingentity.pilot.Controls.Backward)
-                {
-                    flyingentity.Pos.Y -= 2;
-                }
+                // if(flyingentity.pilot.Controls.Jump)
+                // {
+                //     flyingentity.Pos.Motion.Y+=2;
+                // } else if(flyingentity.pilot.Controls.Backward)
+                // {
+                //     flyingentity.Pos.Y -= 2;
+                // }
             }
         }
 

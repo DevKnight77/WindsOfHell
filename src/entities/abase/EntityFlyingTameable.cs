@@ -28,7 +28,7 @@ namespace windsofhell.src.entities.abase
         public Vec3d MountPosition { 
             get{
                 // edit position and animation
-               return Pos.AsBlockPos.ToVec3d().Add(0,0,0);
+               return new Vec3d(Pos.X, Pos.Y, Pos.Z).AddCopy(0,0,0);
             }
         }
 
