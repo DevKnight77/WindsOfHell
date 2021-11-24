@@ -34,7 +34,7 @@ namespace windsofhell.src.entities.abase
 
         public float? MountYaw => HeadYaw;
 
-        public string SuggestedAnimation => "flyflap";
+        public string SuggestedAnimation => "sit";
 
         // called when mounted
         public void DidMount(EntityAgent entityAgent)
