@@ -28,13 +28,19 @@ namespace windsofhell.src.entities.abase
         public Vec3d MountPosition { 
             get{
                 // edit position and animation
-               return new Vec3d(Pos.X, Pos.Y, Pos.Z).AddCopy(0,0,0);
+               return new Vec3d(Pos.X, Pos.Y, Pos.Z).Add(0,0.5D,0);
             }
         }
 
-        public float? MountYaw => HeadYaw;
+        public float? MountYaw
+        {
+            get
+            {
+                return pilot.HeadYaw;
+            }
+        }
 
-        public string SuggestedAnimation => "sit";
+        public string SuggestedAnimation => "sitflooridle";
 
         // called when mounted
         public void DidMount(EntityAgent entityAgent)
@@ -83,6 +89,16 @@ namespace windsofhell.src.entities.abase
         public override void OnGameTick(float dt)
         {
             base.OnGameTick(dt);
+
+            if(pilot != null) {
+               IPlayer player = (pilot as EntityPlayer)?.Player;
+               EntityAgent playerAgent = player.Entity;
+
+               // set Animation to sitting
+               if(player!= null && playerAgent != null) {
+                   playerAgent.StartAnimation(this.SuggestedAnimation);
+               }
+            }
 
             if (!isOnGround())
             {
